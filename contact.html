@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Contact | Avatthar AI Academy{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><div class="section-kicker light">CONTACT</div><h1>Let's start a conversation.</h1><p>Ask about programs, internships, projects or career support.</p></div></section>
+<section class="section"><div class="container contact-grid"><div><div class="section-kicker">GET IN TOUCH</div><h2>Talk to Avatthar.</h2><p>Use WhatsApp for a quick enquiry or email us for program details.</p><a class="btn btn-gold" href="https://wa.me/{{ whatsapp|default('919999999999') }}?text=Hello%20Avatthar%20AI%20Academy%2C%20I%20want%20to%20know%20about%20your%20programs." target="_blank">Chat on WhatsApp →</a></div><div class="contact-card"><h3>Contact</h3><p><b>Email</b><br>hello@avattharacademy.com</p><p><b>WhatsApp</b><br>{{ whatsapp|default('Configure in .env') }}</p><p><b>Hours</b><br>Mon – Sat · 9:00 AM – 6:00 PM</p></div></div></section>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Projects | Avatthar AI Academy{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><div class="section-kicker light">PROJECTS</div><h1>From learning to building.</h1><p>Explore the type of real-world work students can build with Avatthar.</p></div></section>
+<section class="section"><div class="container project-gallery">{% for project in projects %}<article class="project-card project-large"><div class="project-image">{{ project.category }}</div><div class="project-body"><h2>{{ project.title }}</h2><p>{{ project.description }}</p><small>{{ project.category }}</small></div></article>{% endfor %}</div></section>
+{% endblock %}

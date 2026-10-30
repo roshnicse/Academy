@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Programs | Avatthar AI Academy{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><div class="section-kicker light">PROGRAMS</div><h1>Learn what the industry needs.</h1><p>Practical technology programs designed around skills, projects and career readiness.</p></div></section>
+<section class="section"><div class="container"><div class="program-grid program-grid-large">{% for course in courses %}<article class="program-card"><div class="program-icon">✦</div><h3>{{ course.title }}</h3><div class="course-meta">{{ course.category }} · {{ course.duration }}</div><p>{{ course.description }}</p><a class="text-link" href="{{ url_for('main.internships') }}">Enquire / Apply →</a></article>{% endfor %}</div></div></section>
+{% endblock %}
